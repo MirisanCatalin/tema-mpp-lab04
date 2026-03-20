@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'mpp'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "21"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics']
+}
+
+dependencies {
+    // SQLite
+    implementation 'org.xerial:sqlite-jdbc:3.45.1.0'
+
+    // Log4j2
+    implementation 'org.apache.logging.log4j:log4j-api:2.23.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.23.1'
+}
+
+application {
+    mainClass = 'org.example.MainApp'
+}
+
+// Copy resources to output
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}

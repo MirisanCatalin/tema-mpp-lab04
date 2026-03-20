@@ -1,0 +1,411 @@
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp - === Basketball Ticket System starting ===
+2026-03-14 19:46:48 [main] INFO  org.example.utils.DatabaseConfig - DatabaseConfig initialised → jdbc:sqlite:basketball.db
+2026-03-14 19:46:48 [main] INFO  org.example.utils.DatabaseConfig - Initialising database schema...
+2026-03-14 19:46:48 [main] INFO  org.example.utils.DatabaseConfig - Schema ready.
+2026-03-14 19:46:48 [main] INFO  org.example.service.ServiceImpl - ServiceImpl created
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() in cashiers
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() → 0 rows from cashiers
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - save() in cashiers: Cashier{id=null, username='ionescu', fullName='Ion Ionescu'}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.CashierRepositoryImpl - save() succeeded in cashiers: Cashier{id=1, username='ionescu', fullName='Ion Ionescu'}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - save() in cashiers: Cashier{id=null, username='popescu', fullName='Ana Popescu'}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.CashierRepositoryImpl - save() succeeded in cashiers: Cashier{id=2, username='popescu', fullName='Ana Popescu'}
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp - Seeded cashiers
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 0 rows from matches
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - save() in matches: Match{id=null, name='Steaua vs Dinamo', price=50.0, seats=500/500}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - save() succeeded in matches: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=500/500}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - save() in matches: Match{id=null, name='Rapid vs CFR Cluj', price=40.0, seats=300/300}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - save() succeeded in matches: Match{id=2, name='Rapid vs CFR Cluj', price=40.0, seats=300/300}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - save() in matches: Match{id=null, name='Semifinala 1', price=75.0, seats=200/200}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - save() succeeded in matches: Match{id=3, name='Semifinala 1', price=75.0, seats=200/200}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - save() in matches: Match{id=null, name='Semifinala 2', price=75.0, seats=200/200}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - save() succeeded in matches: Match{id=4, name='Semifinala 2', price=75.0, seats=200/200}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - save() in matches: Match{id=null, name='Finala', price=100.0, seats=100/100}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - save() succeeded in matches: Match{id=5, name='Finala', price=100.0, seats=100/100}
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp - Seeded matches
+2026-03-14 19:46:48 [main] DEBUG org.example.service.ServiceImpl - login attempt: username=ionescu
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findByUsernameAndPassword(ionescu)
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.CashierRepositoryImpl - Login OK for username=ionescu
+2026-03-14 19:46:48 [main] INFO  org.example.controller.LoginController - Login successful for username=ionescu
+2026-03-14 19:46:48 [main] INFO  org.example.controller.CashierDashboardController - Dashboard opened for cashier: ionescu
+2026-03-14 19:46:48 [main] DEBUG org.example.service.ServiceImpl - getAllMatches()
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp - Matches loaded: 5
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp -   Steaua vs Dinamo | 500/500seats | 50.0RON
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp -   Rapid vs CFR Cluj | 300/300seats | 40.0RON
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp -   Semifinala 1 | 200/200seats | 75.0RON
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp -   Semifinala 2 | 200/200seats | 75.0RON
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp -   Finala | 100/100seats | 100.0RON
+2026-03-14 19:46:48 [main] DEBUG org.example.service.ServiceImpl - sellTicket: customer='Maria Popescu', matchId=1, seats=3
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=500/500}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.CustomerRepositoryImpl - findByNameOrAddress(name='Maria Popescu', address='Str. Florilor 5, Cluj')
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.CustomerRepositoryImpl - findByNameOrAddress → 0 results
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.CustomerRepositoryImpl - save() in customers: Customer{id=null, name='Maria Popescu', address='Str. Florilor 5, Cluj'}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.CustomerRepositoryImpl - save() succeeded in customers: Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}
+2026-03-14 19:46:48 [main] INFO  org.example.service.ServiceImpl - New customer created: Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - save() in tickets: Ticket{id=null, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=500/500}, numberOfSeats=3}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.TicketRepositoryImpl - save() succeeded in tickets: Ticket{id=1, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=500/500}, numberOfSeats=3}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - updateAvailableSeats(matchId=1, delta=-3)
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - availableSeats updated for matchId=1 by -3
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=497/500}
+2026-03-14 19:46:48 [main] INFO  org.example.controller.CashierDashboardController - Match updated notification received: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=497/500}
+2026-03-14 19:46:48 [main] INFO  org.example.service.ServiceImpl - Ticket sold: Ticket{id=1, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=500/500}, numberOfSeats=3}
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp - Sold: Ticket{id=1, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=500/500}, numberOfSeats=3}
+2026-03-14 19:46:48 [main] DEBUG org.example.service.ServiceImpl - searchTickets(name='Maria Popescu', address='null')
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - findByCustomerNameOrAddress(name='Maria Popescu', address='null')
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - runJoinQuery → 1 tickets
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp - Search results: 1
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 3 seats
+2026-03-14 19:46:48 [main] DEBUG org.example.service.ServiceImpl - modifyTicketSeats(ticketId=1, newSeats=5)
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - findById(1)
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=497/500}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - update() in tickets: Ticket{id=1, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=497/500}, numberOfSeats=5}
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.TicketRepositoryImpl - update() succeeded in tickets (rows=1): Ticket{id=1, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=497/500}, numberOfSeats=5}
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - updateAvailableSeats(matchId=1, delta=-2)
+2026-03-14 19:46:48 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - availableSeats updated for matchId=1 by -2
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 19:46:48 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=495/500}
+2026-03-14 19:46:48 [main] INFO  org.example.controller.CashierDashboardController - Match updated notification received: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=495/500}
+2026-03-14 19:46:48 [main] INFO  org.example.service.ServiceImpl - Ticket 1 modified: 3 → 5 seats
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp - Modified ticket: Ticket{id=1, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=497/500}, numberOfSeats=5}
+2026-03-14 19:46:48 [main] INFO  org.example.controller.CashierDashboardController - Cashier ionescu logged out
+2026-03-14 19:46:48 [main] INFO  org.example.MainApp - === Demo complete ===
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp - === Basketball Ticket System starting ===
+2026-03-14 19:49:13 [main] INFO  org.example.utils.DatabaseConfig - DatabaseConfig initialised → jdbc:sqlite:basketball.db
+2026-03-14 19:49:13 [main] INFO  org.example.utils.DatabaseConfig - Initialising database schema...
+2026-03-14 19:49:13 [main] INFO  org.example.utils.DatabaseConfig - Schema ready.
+2026-03-14 19:49:13 [main] INFO  org.example.service.ServiceImpl - ServiceImpl created
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() in cashiers
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() → 2 rows from cashiers
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 19:49:13 [main] DEBUG org.example.service.ServiceImpl - login attempt: username=ionescu
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findByUsernameAndPassword(ionescu)
+2026-03-14 19:49:13 [main] INFO  org.example.repository.impl.CashierRepositoryImpl - Login OK for username=ionescu
+2026-03-14 19:49:13 [main] INFO  org.example.controller.LoginController - Login successful for username=ionescu
+2026-03-14 19:49:13 [main] INFO  org.example.controller.CashierDashboardController - Dashboard opened for cashier: ionescu
+2026-03-14 19:49:13 [main] DEBUG org.example.service.ServiceImpl - getAllMatches()
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp - Matches loaded: 5
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp -   Steaua vs Dinamo | 495/500seats | 50.0RON
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp -   Rapid vs CFR Cluj | 300/300seats | 40.0RON
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp -   Semifinala 1 | 200/200seats | 75.0RON
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp -   Semifinala 2 | 200/200seats | 75.0RON
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp -   Finala | 100/100seats | 100.0RON
+2026-03-14 19:49:13 [main] DEBUG org.example.service.ServiceImpl - sellTicket: customer='Maria Popescu', matchId=1, seats=3
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=495/500}
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.CustomerRepositoryImpl - findByNameOrAddress(name='Maria Popescu', address='Str. Florilor 5, Cluj')
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.CustomerRepositoryImpl - findByNameOrAddress → 1 results
+2026-03-14 19:49:13 [main] DEBUG org.example.service.ServiceImpl - Existing customer found: Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - save() in tickets: Ticket{id=null, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=495/500}, numberOfSeats=3}
+2026-03-14 19:49:13 [main] INFO  org.example.repository.impl.TicketRepositoryImpl - save() succeeded in tickets: Ticket{id=2, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=495/500}, numberOfSeats=3}
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - updateAvailableSeats(matchId=1, delta=-3)
+2026-03-14 19:49:13 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - availableSeats updated for matchId=1 by -3
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=492/500}
+2026-03-14 19:49:13 [main] INFO  org.example.controller.CashierDashboardController - Match updated notification received: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=492/500}
+2026-03-14 19:49:13 [main] INFO  org.example.service.ServiceImpl - Ticket sold: Ticket{id=2, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=495/500}, numberOfSeats=3}
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp - Sold: Ticket{id=2, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=495/500}, numberOfSeats=3}
+2026-03-14 19:49:13 [main] DEBUG org.example.service.ServiceImpl - searchTickets(name='Maria Popescu', address='null')
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - findByCustomerNameOrAddress(name='Maria Popescu', address='null')
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - runJoinQuery → 2 tickets
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp - Search results: 2
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 5 seats
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 3 seats
+2026-03-14 19:49:13 [main] DEBUG org.example.service.ServiceImpl - modifyTicketSeats(ticketId=2, newSeats=5)
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - findById(2)
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=492/500}
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - update() in tickets: Ticket{id=2, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=492/500}, numberOfSeats=5}
+2026-03-14 19:49:13 [main] INFO  org.example.repository.impl.TicketRepositoryImpl - update() succeeded in tickets (rows=1): Ticket{id=2, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=492/500}, numberOfSeats=5}
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - updateAvailableSeats(matchId=1, delta=-2)
+2026-03-14 19:49:13 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - availableSeats updated for matchId=1 by -2
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 19:49:13 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=490/500}
+2026-03-14 19:49:13 [main] INFO  org.example.controller.CashierDashboardController - Match updated notification received: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=490/500}
+2026-03-14 19:49:13 [main] INFO  org.example.service.ServiceImpl - Ticket 2 modified: 3 → 5 seats
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp - Modified ticket: Ticket{id=2, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=492/500}, numberOfSeats=5}
+2026-03-14 19:49:13 [main] INFO  org.example.controller.CashierDashboardController - Cashier ionescu logged out
+2026-03-14 19:49:13 [main] INFO  org.example.MainApp - === Demo complete ===
+2026-03-14 19:59:40 [JavaFX-Launcher] INFO  org.example.MainApp - === Basketball Ticket System starting ===
+2026-03-14 19:59:40 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - DatabaseConfig initialised → jdbc:sqlite:basketball.db
+2026-03-14 19:59:40 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - Initialising database schema...
+2026-03-14 19:59:40 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - Schema ready.
+2026-03-14 19:59:40 [JavaFX-Launcher] INFO  org.example.service.ServiceImpl - ServiceImpl created
+2026-03-14 19:59:40 [JavaFX-Launcher] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() in cashiers
+2026-03-14 19:59:40 [JavaFX-Launcher] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() → 2 rows from cashiers
+2026-03-14 19:59:40 [JavaFX-Launcher] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 19:59:40 [JavaFX-Launcher] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 19:59:41 [JavaFX Application Thread] ERROR org.example.MainApp - Failed to start JavaFX: Cannot invoke "javafx.scene.text.Font.getNativeFont()" because "<parameter1>" is null
+java.lang.NullPointerException: Cannot invoke "javafx.scene.text.Font.getNativeFont()" because "<parameter1>" is null
+	at javafx.graphics/javafx.scene.text.Font$1.getNativeFont(Font.java:68) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.scene.text.FontHelper.getNativeFont(FontHelper.java:46) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.controls/com.sun.javafx.scene.control.skin.Utils.computeTextWidth(Utils.java:127) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.skin.LabeledSkinBase.computeMinLabeledPartWidth(LabeledSkinBase.java:809) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.skin.LabeledSkinBase.computeMinWidth(LabeledSkinBase.java:306) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.Control.computeMinWidth(Control.java:504) ~[javafx-controls-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Parent.minWidth(Parent.java:1049) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.minWidth(Region.java:1500) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.computeChildPrefAreaWidth(Region.java:1959) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.getMaxAreaWidth(Region.java:2228) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.computeMaxPrefAreaWidth(Region.java:2092) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.VBox.computePrefWidth(VBox.java:420) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Parent.prefWidth(Parent.java:1021) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.prefWidth(Region.java:1536) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.getPreferredWidth(Scene.java:1840) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.resizeRootToPreferredSize(Scene.java:1816) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.preferredSize(Scene.java:1788) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene$2.preferredSize(Scene.java:411) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.scene.SceneHelper.preferredSize(SceneHelper.java:65) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window$12.invalidated(Window.java:1163) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.base/javafx.beans.property.BooleanPropertyBase.markInvalid(BooleanPropertyBase.java:110) ~[javafx-base-21-linux.jar:?]
+	at javafx.base/javafx.beans.property.BooleanPropertyBase.set(BooleanPropertyBase.java:145) ~[javafx-base-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window.setShowing(Window.java:1239) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window.show(Window.java:1254) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Stage.show(Stage.java:277) ~[javafx-graphics-21-linux.jar:?]
+	at org.example.MainApp.start(MainApp.java:69) ~[main/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx-graphics-21-linux.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263) ~[javafx-graphics-21-linux.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-03-14 19:59:58 [JavaFX-Launcher] INFO  org.example.MainApp - === Basketball Ticket System starting ===
+2026-03-14 19:59:58 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - DatabaseConfig initialised → jdbc:sqlite:basketball.db
+2026-03-14 19:59:58 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - Initialising database schema...
+2026-03-14 19:59:58 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - Schema ready.
+2026-03-14 19:59:59 [JavaFX-Launcher] INFO  org.example.service.ServiceImpl - ServiceImpl created
+2026-03-14 19:59:59 [JavaFX-Launcher] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() in cashiers
+2026-03-14 19:59:59 [JavaFX-Launcher] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() → 2 rows from cashiers
+2026-03-14 19:59:59 [JavaFX-Launcher] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 19:59:59 [JavaFX-Launcher] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:00:01 [JavaFX Application Thread] ERROR org.example.MainApp - Failed to start JavaFX: Cannot invoke "javafx.scene.text.Font.getNativeFont()" because "<parameter1>" is null
+java.lang.NullPointerException: Cannot invoke "javafx.scene.text.Font.getNativeFont()" because "<parameter1>" is null
+	at javafx.graphics/javafx.scene.text.Font$1.getNativeFont(Font.java:68) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.scene.text.FontHelper.getNativeFont(FontHelper.java:46) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.controls/com.sun.javafx.scene.control.skin.Utils.computeTextWidth(Utils.java:127) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.skin.LabeledSkinBase.computeMinLabeledPartWidth(LabeledSkinBase.java:809) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.skin.LabeledSkinBase.computeMinWidth(LabeledSkinBase.java:306) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.Control.computeMinWidth(Control.java:504) ~[javafx-controls-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Parent.minWidth(Parent.java:1049) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.minWidth(Region.java:1500) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.computeChildPrefAreaWidth(Region.java:1959) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.getMaxAreaWidth(Region.java:2228) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.computeMaxPrefAreaWidth(Region.java:2092) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.VBox.computePrefWidth(VBox.java:420) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Parent.prefWidth(Parent.java:1021) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.prefWidth(Region.java:1536) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.getPreferredWidth(Scene.java:1840) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.resizeRootToPreferredSize(Scene.java:1816) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.preferredSize(Scene.java:1788) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene$2.preferredSize(Scene.java:411) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.scene.SceneHelper.preferredSize(SceneHelper.java:65) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window$12.invalidated(Window.java:1163) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.base/javafx.beans.property.BooleanPropertyBase.markInvalid(BooleanPropertyBase.java:110) ~[javafx-base-21-linux.jar:?]
+	at javafx.base/javafx.beans.property.BooleanPropertyBase.set(BooleanPropertyBase.java:145) ~[javafx-base-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window.setShowing(Window.java:1239) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window.show(Window.java:1254) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Stage.show(Stage.java:277) ~[javafx-graphics-21-linux.jar:?]
+	at org.example.MainApp.start(MainApp.java:69) ~[main/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx-graphics-21-linux.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263) ~[javafx-graphics-21-linux.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp - === Basketball Ticket System starting (Console Mode) ===
+2026-03-14 20:07:09 [main] INFO  org.example.utils.DatabaseConfig - DatabaseConfig initialised → jdbc:sqlite:basketball.db
+2026-03-14 20:07:09 [main] INFO  org.example.utils.DatabaseConfig - Initialising database schema...
+2026-03-14 20:07:09 [main] INFO  org.example.utils.DatabaseConfig - Schema ready.
+2026-03-14 20:07:09 [main] INFO  org.example.service.ServiceImpl - ServiceImpl created
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() in cashiers
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() → 2 rows from cashiers
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:07:09 [main] DEBUG org.example.service.ServiceImpl - login attempt: username=ionescu
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.CashierRepositoryImpl - findByUsernameAndPassword(ionescu)
+2026-03-14 20:07:09 [main] INFO  org.example.repository.impl.CashierRepositoryImpl - Login OK for username=ionescu
+2026-03-14 20:07:09 [main] INFO  org.example.controller.LoginController - Login successful for username=ionescu
+2026-03-14 20:07:09 [main] INFO  org.example.controller.CashierDashboardController - Dashboard opened for cashier: ionescu
+2026-03-14 20:07:09 [main] DEBUG org.example.service.ServiceImpl - getAllMatches()
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp - Matches loaded: 5
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp -   Steaua vs Dinamo | 490/500seats | 50.0RON
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp -   Rapid vs CFR Cluj | 300/300seats | 40.0RON
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp -   Semifinala 1 | 200/200seats | 75.0RON
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp -   Semifinala 2 | 200/200seats | 75.0RON
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp -   Finala | 100/100seats | 100.0RON
+2026-03-14 20:07:09 [main] DEBUG org.example.service.ServiceImpl - sellTicket: customer='Maria Popescu', matchId=1, seats=3
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=490/500}
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.CustomerRepositoryImpl - findByNameOrAddress(name='Maria Popescu', address='Str. Florilor 5, Cluj')
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.CustomerRepositoryImpl - findByNameOrAddress → 1 results
+2026-03-14 20:07:09 [main] DEBUG org.example.service.ServiceImpl - Existing customer found: Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - save() in tickets: Ticket{id=null, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=490/500}, numberOfSeats=3}
+2026-03-14 20:07:09 [main] INFO  org.example.repository.impl.TicketRepositoryImpl - save() succeeded in tickets: Ticket{id=3, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=490/500}, numberOfSeats=3}
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - updateAvailableSeats(matchId=1, delta=-3)
+2026-03-14 20:07:09 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - availableSeats updated for matchId=1 by -3
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=487/500}
+2026-03-14 20:07:09 [main] INFO  org.example.controller.CashierDashboardController - Match updated notification received: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=487/500}
+2026-03-14 20:07:09 [main] INFO  org.example.service.ServiceImpl - Ticket sold: Ticket{id=3, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=490/500}, numberOfSeats=3}
+2026-03-14 20:07:09 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - getAllMatches()
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp - Sold: Ticket{id=3, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=490/500}, numberOfSeats=3}
+2026-03-14 20:07:09 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:07:09 [main] DEBUG org.example.service.ServiceImpl - searchTickets(name='Maria Popescu', address='null')
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - findByCustomerNameOrAddress(name='Maria Popescu', address='null')
+2026-03-14 20:07:09 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - runJoinQuery → 3 tickets
+2026-03-14 20:07:09 [JavaFX Application Thread] INFO  org.example.controller.CashierDashboardController - Loaded 5 matches
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp - Search results: 3
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 5 seats
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 5 seats
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 3 seats
+2026-03-14 20:07:09 [main] DEBUG org.example.service.ServiceImpl - modifyTicketSeats(ticketId=3, newSeats=5)
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - findById(3)
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=487/500}
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.TicketRepositoryImpl - update() in tickets: Ticket{id=3, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=487/500}, numberOfSeats=5}
+2026-03-14 20:07:09 [main] INFO  org.example.repository.impl.TicketRepositoryImpl - update() succeeded in tickets (rows=1): Ticket{id=3, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=487/500}, numberOfSeats=5}
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - updateAvailableSeats(matchId=1, delta=-2)
+2026-03-14 20:07:09 [main] INFO  org.example.repository.impl.MatchRepositoryImpl - availableSeats updated for matchId=1 by -2
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 20:07:09 [main] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=485/500}
+2026-03-14 20:07:09 [main] INFO  org.example.controller.CashierDashboardController - Match updated notification received: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=485/500}
+2026-03-14 20:07:09 [main] INFO  org.example.service.ServiceImpl - Ticket 3 modified: 3 → 5 seats
+2026-03-14 20:07:09 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - getAllMatches()
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp - Modified ticket: Ticket{id=3, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=487/500}, numberOfSeats=5}
+2026-03-14 20:07:09 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:07:09 [main] INFO  org.example.controller.CashierDashboardController - Cashier ionescu logged out (console)
+2026-03-14 20:07:09 [main] INFO  org.example.MainApp - === Demo complete ===
+2026-03-14 20:07:09 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:07:09 [JavaFX Application Thread] INFO  org.example.controller.CashierDashboardController - Loaded 5 matches
+2026-03-14 20:08:16 [JavaFX-Launcher] INFO  org.example.MainApp - === Basketball Ticket System starting (JavaFX Mode) ===
+2026-03-14 20:08:16 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - DatabaseConfig initialised → jdbc:sqlite:basketball.db
+2026-03-14 20:08:16 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - Initialising database schema...
+2026-03-14 20:08:16 [JavaFX-Launcher] INFO  org.example.utils.DatabaseConfig - Schema ready.
+2026-03-14 20:08:16 [JavaFX-Launcher] INFO  org.example.service.ServiceImpl - ServiceImpl created
+2026-03-14 20:08:16 [JavaFX-Launcher] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() in cashiers
+2026-03-14 20:08:16 [JavaFX-Launcher] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() → 2 rows from cashiers
+2026-03-14 20:08:16 [JavaFX-Launcher] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:08:16 [JavaFX-Launcher] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:08:18 [JavaFX Application Thread] ERROR org.example.MainApp - Failed to start JavaFX: Cannot invoke "javafx.scene.text.Font.getNativeFont()" because "<parameter1>" is null
+java.lang.NullPointerException: Cannot invoke "javafx.scene.text.Font.getNativeFont()" because "<parameter1>" is null
+	at javafx.graphics/javafx.scene.text.Font$1.getNativeFont(Font.java:68) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.scene.text.FontHelper.getNativeFont(FontHelper.java:46) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.controls/com.sun.javafx.scene.control.skin.Utils.computeTextWidth(Utils.java:127) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.skin.LabeledSkinBase.computeMinLabeledPartWidth(LabeledSkinBase.java:809) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.skin.LabeledSkinBase.computeMinWidth(LabeledSkinBase.java:306) ~[javafx-controls-21-linux.jar:?]
+	at javafx.controls/javafx.scene.control.Control.computeMinWidth(Control.java:504) ~[javafx-controls-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Parent.minWidth(Parent.java:1049) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.minWidth(Region.java:1500) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.computeChildPrefAreaWidth(Region.java:1959) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.getMaxAreaWidth(Region.java:2228) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.computeMaxPrefAreaWidth(Region.java:2092) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.VBox.computePrefWidth(VBox.java:420) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Parent.prefWidth(Parent.java:1021) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.layout.Region.prefWidth(Region.java:1536) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.getPreferredWidth(Scene.java:1840) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.resizeRootToPreferredSize(Scene.java:1816) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene.preferredSize(Scene.java:1788) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.scene.Scene$2.preferredSize(Scene.java:411) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.scene.SceneHelper.preferredSize(SceneHelper.java:65) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window$12.invalidated(Window.java:1163) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.base/javafx.beans.property.BooleanPropertyBase.markInvalid(BooleanPropertyBase.java:110) ~[javafx-base-21-linux.jar:?]
+	at javafx.base/javafx.beans.property.BooleanPropertyBase.set(BooleanPropertyBase.java:145) ~[javafx-base-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window.setShowing(Window.java:1239) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Window.show(Window.java:1254) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/javafx.stage.Stage.show(Stage.java:277) ~[javafx-graphics-21-linux.jar:?]
+	at org.example.MainApp.start(MainApp.java:146) ~[main/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx-graphics-21-linux.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method) ~[javafx-graphics-21-linux.jar:?]
+	at javafx.graphics/com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263) ~[javafx-graphics-21-linux.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp - Falling back to console mode...
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp - === Basketball Ticket System starting (Console Mode) ===
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.utils.DatabaseConfig - DatabaseConfig initialised → jdbc:sqlite:basketball.db
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.utils.DatabaseConfig - Initialising database schema...
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.utils.DatabaseConfig - Schema ready.
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.service.ServiceImpl - ServiceImpl created
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() in cashiers
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.CashierRepositoryImpl - findAll() → 2 rows from cashiers
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - login attempt: username=ionescu
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.CashierRepositoryImpl - findByUsernameAndPassword(ionescu)
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.repository.impl.CashierRepositoryImpl - Login OK for username=ionescu
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.controller.LoginController - Login successful for username=ionescu
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.controller.CashierDashboardController - Dashboard opened for cashier: ionescu
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - getAllMatches()
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp - Matches loaded: 5
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Steaua vs Dinamo | 485/500seats | 50.0RON
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Rapid vs CFR Cluj | 300/300seats | 40.0RON
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Semifinala 1 | 200/200seats | 75.0RON
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Semifinala 2 | 200/200seats | 75.0RON
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Finala | 100/100seats | 100.0RON
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - sellTicket: customer='Maria Popescu', matchId=1, seats=3
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=485/500}
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.CustomerRepositoryImpl - findByNameOrAddress(name='Maria Popescu', address='Str. Florilor 5, Cluj')
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.CustomerRepositoryImpl - findByNameOrAddress → 1 results
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - Existing customer found: Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.TicketRepositoryImpl - save() in tickets: Ticket{id=null, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=485/500}, numberOfSeats=3}
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.repository.impl.TicketRepositoryImpl - save() succeeded in tickets: Ticket{id=4, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=485/500}, numberOfSeats=3}
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - updateAvailableSeats(matchId=1, delta=-3)
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.repository.impl.MatchRepositoryImpl - availableSeats updated for matchId=1 by -3
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=482/500}
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.controller.CashierDashboardController - Match updated notification received: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=482/500}
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.service.ServiceImpl - Ticket sold: Ticket{id=4, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=485/500}, numberOfSeats=3}
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp - Sold: Ticket{id=4, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=485/500}, numberOfSeats=3}
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - searchTickets(name='Maria Popescu', address='null')
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.TicketRepositoryImpl - findByCustomerNameOrAddress(name='Maria Popescu', address='null')
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.TicketRepositoryImpl - runJoinQuery → 4 tickets
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp - Search results: 4
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 5 seats
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 5 seats
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 5 seats
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp -   Maria Popescu | Steaua vs Dinamo | 3 seats
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - modifyTicketSeats(ticketId=4, newSeats=5)
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.TicketRepositoryImpl - findById(4)
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=482/500}
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.TicketRepositoryImpl - update() in tickets: Ticket{id=4, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=482/500}, numberOfSeats=5}
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.repository.impl.TicketRepositoryImpl - update() succeeded in tickets (rows=1): Ticket{id=4, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=482/500}, numberOfSeats=5}
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - updateAvailableSeats(matchId=1, delta=-2)
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.repository.impl.MatchRepositoryImpl - availableSeats updated for matchId=1 by -2
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) in matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findById(1) → Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=480/500}
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.controller.CashierDashboardController - Match updated notification received: Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=480/500}
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.service.ServiceImpl - Ticket 4 modified: 3 → 5 seats
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp - Modified ticket: Ticket{id=4, customer=Customer{id=1, name='Maria Popescu', address='Str. Florilor 5, Cluj'}, match=Match{id=1, name='Steaua vs Dinamo', price=50.0, seats=482/500}, numberOfSeats=5}
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.controller.CashierDashboardController - Cashier ionescu logged out (console)
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.MainApp - === Demo complete ===
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - getAllMatches()
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.controller.CashierDashboardController - Loaded 5 matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.service.ServiceImpl - getAllMatches()
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() in matches
+2026-03-14 20:08:18 [JavaFX Application Thread] DEBUG org.example.repository.impl.MatchRepositoryImpl - findAll() → 5 rows from matches
+2026-03-14 20:08:18 [JavaFX Application Thread] INFO  org.example.controller.CashierDashboardController - Loaded 5 matches

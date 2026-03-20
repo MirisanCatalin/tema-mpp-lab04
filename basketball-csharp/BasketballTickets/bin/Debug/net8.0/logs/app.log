@@ -1,0 +1,227 @@
+2026-03-16 17:30:54,188 [1] INFO  Program - === Basketball Ticket System starting ===
+2026-03-16 17:30:54,197 [1] INFO  DatabaseConfig - DatabaseConfig initialised → Data Source=basketball.db
+2026-03-16 17:30:54,199 [1] INFO  DatabaseConfig - Initialising database schema...
+2026-03-16 17:30:54,260 [1] INFO  DatabaseConfig - Schema ready.
+2026-03-16 17:30:54,262 [1] INFO  ServiceImpl - ServiceImpl created
+2026-03-16 17:30:54,262 [1] INFO  ServiceImpl - ServiceImpl created
+2026-03-16 17:30:54,263 [1] DEBUG CashierRepositoryImpl - FindAll() in cashiers
+2026-03-16 17:30:54,263 [1] DEBUG CashierRepositoryImpl - FindAll() in cashiers
+2026-03-16 17:30:54,264 [1] DEBUG CashierRepositoryImpl - FindAll() → 0 rows from cashiers
+2026-03-16 17:30:54,264 [1] DEBUG CashierRepositoryImpl - FindAll() → 0 rows from cashiers
+2026-03-16 17:30:54,267 [1] DEBUG CashierRepositoryImpl - Save() in cashiers: Cashier{Id=0, Username='ionescu', FullName='Ion Ionescu'}
+2026-03-16 17:30:54,267 [1] DEBUG CashierRepositoryImpl - Save() in cashiers: Cashier{Id=0, Username='ionescu', FullName='Ion Ionescu'}
+2026-03-16 17:30:54,279 [1] INFO  CashierRepositoryImpl - Save() succeeded in cashiers: Cashier{Id=1, Username='ionescu', FullName='Ion Ionescu'}
+2026-03-16 17:30:54,279 [1] INFO  CashierRepositoryImpl - Save() succeeded in cashiers: Cashier{Id=1, Username='ionescu', FullName='Ion Ionescu'}
+2026-03-16 17:30:54,280 [1] DEBUG CashierRepositoryImpl - Save() in cashiers: Cashier{Id=0, Username='popescu', FullName='Ana Popescu'}
+2026-03-16 17:30:54,280 [1] DEBUG CashierRepositoryImpl - Save() in cashiers: Cashier{Id=0, Username='popescu', FullName='Ana Popescu'}
+2026-03-16 17:30:54,288 [1] INFO  CashierRepositoryImpl - Save() succeeded in cashiers: Cashier{Id=2, Username='popescu', FullName='Ana Popescu'}
+2026-03-16 17:30:54,288 [1] INFO  CashierRepositoryImpl - Save() succeeded in cashiers: Cashier{Id=2, Username='popescu', FullName='Ana Popescu'}
+2026-03-16 17:30:54,288 [1] INFO  Program - Seeded cashiers
+2026-03-16 17:30:54,288 [1] DEBUG MatchRepositoryImpl - FindAll() in matches
+2026-03-16 17:30:54,288 [1] DEBUG MatchRepositoryImpl - FindAll() in matches
+2026-03-16 17:30:54,288 [1] DEBUG MatchRepositoryImpl - FindAll() → 0 rows from matches
+2026-03-16 17:30:54,288 [1] DEBUG MatchRepositoryImpl - FindAll() → 0 rows from matches
+2026-03-16 17:30:54,291 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Steaua vs Dinamo', Price=50, Seats=500/500}
+2026-03-16 17:30:54,291 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Steaua vs Dinamo', Price=50, Seats=500/500}
+2026-03-16 17:30:54,299 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=500/500}
+2026-03-16 17:30:54,299 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=500/500}
+2026-03-16 17:30:54,299 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Rapid vs CFR Cluj', Price=40, Seats=300/300}
+2026-03-16 17:30:54,299 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Rapid vs CFR Cluj', Price=40, Seats=300/300}
+2026-03-16 17:30:54,306 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=2, Name='Rapid vs CFR Cluj', Price=40, Seats=300/300}
+2026-03-16 17:30:54,306 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=2, Name='Rapid vs CFR Cluj', Price=40, Seats=300/300}
+2026-03-16 17:30:54,306 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Semifinala 1', Price=75, Seats=200/200}
+2026-03-16 17:30:54,306 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Semifinala 1', Price=75, Seats=200/200}
+2026-03-16 17:30:54,313 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=3, Name='Semifinala 1', Price=75, Seats=200/200}
+2026-03-16 17:30:54,313 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=3, Name='Semifinala 1', Price=75, Seats=200/200}
+2026-03-16 17:30:54,313 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Semifinala 2', Price=75, Seats=200/200}
+2026-03-16 17:30:54,313 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Semifinala 2', Price=75, Seats=200/200}
+2026-03-16 17:30:54,320 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=4, Name='Semifinala 2', Price=75, Seats=200/200}
+2026-03-16 17:30:54,320 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=4, Name='Semifinala 2', Price=75, Seats=200/200}
+2026-03-16 17:30:54,320 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Finala', Price=100, Seats=100/100}
+2026-03-16 17:30:54,320 [1] DEBUG MatchRepositoryImpl - Save() in matches: Match{Id=0, Name='Finala', Price=100, Seats=100/100}
+2026-03-16 17:30:54,327 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=5, Name='Finala', Price=100, Seats=100/100}
+2026-03-16 17:30:54,327 [1] INFO  MatchRepositoryImpl - Save() succeeded in matches: Match{Id=5, Name='Finala', Price=100, Seats=100/100}
+2026-03-16 17:30:54,327 [1] INFO  Program - Seeded matches
+2026-03-16 17:30:54,327 [1] DEBUG ServiceImpl - Login attempt: username=ionescu
+2026-03-16 17:30:54,327 [1] DEBUG ServiceImpl - Login attempt: username=ionescu
+2026-03-16 17:30:54,328 [1] DEBUG CashierRepositoryImpl - FindByUsernameAndPassword(ionescu)
+2026-03-16 17:30:54,328 [1] DEBUG CashierRepositoryImpl - FindByUsernameAndPassword(ionescu)
+2026-03-16 17:30:54,328 [1] INFO  CashierRepositoryImpl - Login OK for username=ionescu
+2026-03-16 17:30:54,328 [1] INFO  CashierRepositoryImpl - Login OK for username=ionescu
+2026-03-16 17:30:54,332 [1] INFO  LoginController - Login successful for username=ionescu
+2026-03-16 17:30:54,332 [1] INFO  CashierDashboardController - Dashboard opened for cashier: ionescu
+2026-03-16 17:30:54,333 [1] DEBUG ServiceImpl - GetAllMatches()
+2026-03-16 17:30:54,333 [1] DEBUG ServiceImpl - GetAllMatches()
+2026-03-16 17:30:54,333 [1] DEBUG MatchRepositoryImpl - FindAll() in matches
+2026-03-16 17:30:54,333 [1] DEBUG MatchRepositoryImpl - FindAll() in matches
+2026-03-16 17:30:54,334 [1] DEBUG MatchRepositoryImpl - FindAll() → 5 rows from matches
+2026-03-16 17:30:54,334 [1] DEBUG MatchRepositoryImpl - FindAll() → 5 rows from matches
+2026-03-16 17:30:54,334 [1] INFO  Program - Matches loaded: 5
+2026-03-16 17:30:54,334 [1] INFO  Program -   Steaua vs Dinamo | 500/500 locuri | 50 RON
+2026-03-16 17:30:54,334 [1] INFO  Program -   Rapid vs CFR Cluj | 300/300 locuri | 40 RON
+2026-03-16 17:30:54,334 [1] INFO  Program -   Semifinala 1 | 200/200 locuri | 75 RON
+2026-03-16 17:30:54,334 [1] INFO  Program -   Semifinala 2 | 200/200 locuri | 75 RON
+2026-03-16 17:30:54,334 [1] INFO  Program -   Finala | 100/100 locuri | 100 RON
+2026-03-16 17:30:54,335 [1] DEBUG ServiceImpl - SellTicket: customer='Maria Popescu', matchId=1, seats=3
+2026-03-16 17:30:54,335 [1] DEBUG ServiceImpl - SellTicket: customer='Maria Popescu', matchId=1, seats=3
+2026-03-16 17:30:54,335 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:30:54,335 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:30:54,335 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=500/500}
+2026-03-16 17:30:54,335 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=500/500}
+2026-03-16 17:30:54,336 [1] DEBUG CustomerRepositoryImpl - FindByNameOrAddress(name='Maria Popescu', address='Str. Florilor 5, Cluj')
+2026-03-16 17:30:54,336 [1] DEBUG CustomerRepositoryImpl - FindByNameOrAddress(name='Maria Popescu', address='Str. Florilor 5, Cluj')
+2026-03-16 17:30:54,337 [1] DEBUG CustomerRepositoryImpl - FindByNameOrAddress → 0 results
+2026-03-16 17:30:54,337 [1] DEBUG CustomerRepositoryImpl - FindByNameOrAddress → 0 results
+2026-03-16 17:30:54,338 [1] DEBUG CustomerRepositoryImpl - Save() in customers: Customer{Id=0, Name='Maria Popescu', Address='Str. Florilor 5, Cluj'}
+2026-03-16 17:30:54,338 [1] DEBUG CustomerRepositoryImpl - Save() in customers: Customer{Id=0, Name='Maria Popescu', Address='Str. Florilor 5, Cluj'}
+2026-03-16 17:30:54,345 [1] INFO  CustomerRepositoryImpl - Save() succeeded in customers: Customer{Id=1, Name='Maria Popescu', Address='Str. Florilor 5, Cluj'}
+2026-03-16 17:30:54,345 [1] INFO  CustomerRepositoryImpl - Save() succeeded in customers: Customer{Id=1, Name='Maria Popescu', Address='Str. Florilor 5, Cluj'}
+2026-03-16 17:30:54,345 [1] INFO  ServiceImpl - New customer created: Customer{Id=1, Name='Maria Popescu', Address='Str. Florilor 5, Cluj'}
+2026-03-16 17:30:54,345 [1] INFO  ServiceImpl - New customer created: Customer{Id=1, Name='Maria Popescu', Address='Str. Florilor 5, Cluj'}
+2026-03-16 17:30:54,345 [1] DEBUG TicketRepositoryImpl - Save() in tickets: Ticket{Id=0, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:30:54,345 [1] DEBUG TicketRepositoryImpl - Save() in tickets: Ticket{Id=0, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:30:54,352 [1] INFO  TicketRepositoryImpl - Save() succeeded in tickets: Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:30:54,352 [1] INFO  TicketRepositoryImpl - Save() succeeded in tickets: Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:30:54,353 [1] DEBUG MatchRepositoryImpl - UpdateAvailableSeats(matchId=1, delta=-3)
+2026-03-16 17:30:54,353 [1] DEBUG MatchRepositoryImpl - UpdateAvailableSeats(matchId=1, delta=-3)
+2026-03-16 17:30:54,360 [1] INFO  MatchRepositoryImpl - AvailableSeats updated for matchId=1 by -3
+2026-03-16 17:30:54,360 [1] INFO  MatchRepositoryImpl - AvailableSeats updated for matchId=1 by -3
+2026-03-16 17:30:54,360 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:30:54,360 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:30:54,361 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=497/500}
+2026-03-16 17:30:54,361 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=497/500}
+2026-03-16 17:30:54,361 [1] INFO  CashierDashboardController - Match updated notification received: Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=497/500}
+2026-03-16 17:30:54,361 [1] INFO  ServiceImpl - Ticket sold: Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:30:54,361 [1] INFO  ServiceImpl - Ticket sold: Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:30:54,361 [1] INFO  Program - Sold: Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:30:54,361 [1] DEBUG ServiceImpl - SearchTickets(name='Maria Popescu', address='')
+2026-03-16 17:30:54,361 [1] DEBUG ServiceImpl - SearchTickets(name='Maria Popescu', address='')
+2026-03-16 17:30:54,362 [1] DEBUG TicketRepositoryImpl - FindByCustomerNameOrAddress(name='Maria Popescu', address='')
+2026-03-16 17:30:54,362 [1] DEBUG TicketRepositoryImpl - FindByCustomerNameOrAddress(name='Maria Popescu', address='')
+2026-03-16 17:30:54,363 [1] DEBUG TicketRepositoryImpl - RunJoinQuery → 1 tickets
+2026-03-16 17:30:54,363 [1] DEBUG TicketRepositoryImpl - RunJoinQuery → 1 tickets
+2026-03-16 17:30:54,363 [1] INFO  Program - Search results: 1
+2026-03-16 17:30:54,363 [1] INFO  Program -   Maria Popescu | Steaua vs Dinamo | 3 locuri
+2026-03-16 17:30:54,364 [1] DEBUG ServiceImpl - ModifyTicketSeats(ticketId=1, newSeats=5)
+2026-03-16 17:30:54,364 [1] DEBUG ServiceImpl - ModifyTicketSeats(ticketId=1, newSeats=5)
+2026-03-16 17:30:54,364 [1] DEBUG TicketRepositoryImpl - FindById(1)
+2026-03-16 17:30:54,364 [1] DEBUG TicketRepositoryImpl - FindById(1)
+2026-03-16 17:30:54,364 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:30:54,364 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:30:54,364 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=497/500}
+2026-03-16 17:30:54,364 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=497/500}
+2026-03-16 17:30:54,365 [1] DEBUG TicketRepositoryImpl - Update() in tickets: Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:30:54,365 [1] DEBUG TicketRepositoryImpl - Update() in tickets: Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:30:54,372 [1] INFO  TicketRepositoryImpl - Update() succeeded in tickets (rows=1): Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:30:54,372 [1] INFO  TicketRepositoryImpl - Update() succeeded in tickets (rows=1): Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:30:54,372 [1] DEBUG MatchRepositoryImpl - UpdateAvailableSeats(matchId=1, delta=-2)
+2026-03-16 17:30:54,372 [1] DEBUG MatchRepositoryImpl - UpdateAvailableSeats(matchId=1, delta=-2)
+2026-03-16 17:30:54,379 [1] INFO  MatchRepositoryImpl - AvailableSeats updated for matchId=1 by -2
+2026-03-16 17:30:54,379 [1] INFO  MatchRepositoryImpl - AvailableSeats updated for matchId=1 by -2
+2026-03-16 17:30:54,379 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:30:54,379 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:30:54,379 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=495/500}
+2026-03-16 17:30:54,379 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=495/500}
+2026-03-16 17:30:54,379 [1] INFO  CashierDashboardController - Match updated notification received: Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=495/500}
+2026-03-16 17:30:54,379 [1] INFO  ServiceImpl - Ticket 1 modified: 3 → 5 seats
+2026-03-16 17:30:54,379 [1] INFO  ServiceImpl - Ticket 1 modified: 3 → 5 seats
+2026-03-16 17:30:54,379 [1] INFO  Program - Modified ticket: Ticket{Id=1, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:30:54,379 [1] INFO  CashierDashboardController - Cashier ionescu logged out
+2026-03-16 17:30:54,380 [1] INFO  Program - === Demo complete ===
+2026-03-16 17:31:01,275 [1] INFO  Program - === Basketball Ticket System starting ===
+2026-03-16 17:31:01,288 [1] INFO  DatabaseConfig - DatabaseConfig initialised → Data Source=basketball.db
+2026-03-16 17:31:01,289 [1] INFO  DatabaseConfig - Initialising database schema...
+2026-03-16 17:31:01,316 [1] INFO  DatabaseConfig - Schema ready.
+2026-03-16 17:31:01,318 [1] INFO  ServiceImpl - ServiceImpl created
+2026-03-16 17:31:01,318 [1] INFO  ServiceImpl - ServiceImpl created
+2026-03-16 17:31:01,319 [1] DEBUG CashierRepositoryImpl - FindAll() in cashiers
+2026-03-16 17:31:01,319 [1] DEBUG CashierRepositoryImpl - FindAll() in cashiers
+2026-03-16 17:31:01,322 [1] DEBUG CashierRepositoryImpl - FindAll() → 2 rows from cashiers
+2026-03-16 17:31:01,322 [1] DEBUG CashierRepositoryImpl - FindAll() → 2 rows from cashiers
+2026-03-16 17:31:01,323 [1] DEBUG MatchRepositoryImpl - FindAll() in matches
+2026-03-16 17:31:01,323 [1] DEBUG MatchRepositoryImpl - FindAll() in matches
+2026-03-16 17:31:01,324 [1] DEBUG MatchRepositoryImpl - FindAll() → 5 rows from matches
+2026-03-16 17:31:01,324 [1] DEBUG MatchRepositoryImpl - FindAll() → 5 rows from matches
+2026-03-16 17:31:01,324 [1] DEBUG ServiceImpl - Login attempt: username=ionescu
+2026-03-16 17:31:01,324 [1] DEBUG ServiceImpl - Login attempt: username=ionescu
+2026-03-16 17:31:01,324 [1] DEBUG CashierRepositoryImpl - FindByUsernameAndPassword(ionescu)
+2026-03-16 17:31:01,324 [1] DEBUG CashierRepositoryImpl - FindByUsernameAndPassword(ionescu)
+2026-03-16 17:31:01,327 [1] INFO  CashierRepositoryImpl - Login OK for username=ionescu
+2026-03-16 17:31:01,327 [1] INFO  CashierRepositoryImpl - Login OK for username=ionescu
+2026-03-16 17:31:01,327 [1] INFO  LoginController - Login successful for username=ionescu
+2026-03-16 17:31:01,328 [1] INFO  CashierDashboardController - Dashboard opened for cashier: ionescu
+2026-03-16 17:31:01,328 [1] DEBUG ServiceImpl - GetAllMatches()
+2026-03-16 17:31:01,328 [1] DEBUG ServiceImpl - GetAllMatches()
+2026-03-16 17:31:01,328 [1] DEBUG MatchRepositoryImpl - FindAll() in matches
+2026-03-16 17:31:01,328 [1] DEBUG MatchRepositoryImpl - FindAll() in matches
+2026-03-16 17:31:01,328 [1] DEBUG MatchRepositoryImpl - FindAll() → 5 rows from matches
+2026-03-16 17:31:01,328 [1] DEBUG MatchRepositoryImpl - FindAll() → 5 rows from matches
+2026-03-16 17:31:01,328 [1] INFO  Program - Matches loaded: 5
+2026-03-16 17:31:01,330 [1] INFO  Program -   Steaua vs Dinamo | 495/500 locuri | 50 RON
+2026-03-16 17:31:01,330 [1] INFO  Program -   Rapid vs CFR Cluj | 300/300 locuri | 40 RON
+2026-03-16 17:31:01,330 [1] INFO  Program -   Semifinala 1 | 200/200 locuri | 75 RON
+2026-03-16 17:31:01,330 [1] INFO  Program -   Semifinala 2 | 200/200 locuri | 75 RON
+2026-03-16 17:31:01,330 [1] INFO  Program -   Finala | 100/100 locuri | 100 RON
+2026-03-16 17:31:01,331 [1] DEBUG ServiceImpl - SellTicket: customer='Maria Popescu', matchId=1, seats=3
+2026-03-16 17:31:01,331 [1] DEBUG ServiceImpl - SellTicket: customer='Maria Popescu', matchId=1, seats=3
+2026-03-16 17:31:01,332 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:31:01,332 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:31:01,333 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=495/500}
+2026-03-16 17:31:01,333 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=495/500}
+2026-03-16 17:31:01,333 [1] DEBUG CustomerRepositoryImpl - FindByNameOrAddress(name='Maria Popescu', address='Str. Florilor 5, Cluj')
+2026-03-16 17:31:01,333 [1] DEBUG CustomerRepositoryImpl - FindByNameOrAddress(name='Maria Popescu', address='Str. Florilor 5, Cluj')
+2026-03-16 17:31:01,335 [1] DEBUG CustomerRepositoryImpl - FindByNameOrAddress → 1 results
+2026-03-16 17:31:01,335 [1] DEBUG CustomerRepositoryImpl - FindByNameOrAddress → 1 results
+2026-03-16 17:31:01,335 [1] DEBUG ServiceImpl - Existing customer found: Customer{Id=1, Name='Maria Popescu', Address='Str. Florilor 5, Cluj'}
+2026-03-16 17:31:01,335 [1] DEBUG ServiceImpl - Existing customer found: Customer{Id=1, Name='Maria Popescu', Address='Str. Florilor 5, Cluj'}
+2026-03-16 17:31:01,336 [1] DEBUG TicketRepositoryImpl - Save() in tickets: Ticket{Id=0, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:31:01,336 [1] DEBUG TicketRepositoryImpl - Save() in tickets: Ticket{Id=0, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:31:01,343 [1] INFO  TicketRepositoryImpl - Save() succeeded in tickets: Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:31:01,343 [1] INFO  TicketRepositoryImpl - Save() succeeded in tickets: Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:31:01,344 [1] DEBUG MatchRepositoryImpl - UpdateAvailableSeats(matchId=1, delta=-3)
+2026-03-16 17:31:01,344 [1] DEBUG MatchRepositoryImpl - UpdateAvailableSeats(matchId=1, delta=-3)
+2026-03-16 17:31:01,350 [1] INFO  MatchRepositoryImpl - AvailableSeats updated for matchId=1 by -3
+2026-03-16 17:31:01,350 [1] INFO  MatchRepositoryImpl - AvailableSeats updated for matchId=1 by -3
+2026-03-16 17:31:01,350 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:31:01,350 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:31:01,350 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=492/500}
+2026-03-16 17:31:01,350 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=492/500}
+2026-03-16 17:31:01,351 [1] INFO  CashierDashboardController - Match updated notification received: Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=492/500}
+2026-03-16 17:31:01,351 [1] INFO  ServiceImpl - Ticket sold: Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:31:01,351 [1] INFO  ServiceImpl - Ticket sold: Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:31:01,351 [1] INFO  Program - Sold: Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=3}
+2026-03-16 17:31:01,351 [1] DEBUG ServiceImpl - SearchTickets(name='Maria Popescu', address='')
+2026-03-16 17:31:01,351 [1] DEBUG ServiceImpl - SearchTickets(name='Maria Popescu', address='')
+2026-03-16 17:31:01,351 [1] DEBUG TicketRepositoryImpl - FindByCustomerNameOrAddress(name='Maria Popescu', address='')
+2026-03-16 17:31:01,351 [1] DEBUG TicketRepositoryImpl - FindByCustomerNameOrAddress(name='Maria Popescu', address='')
+2026-03-16 17:31:01,352 [1] DEBUG TicketRepositoryImpl - RunJoinQuery → 2 tickets
+2026-03-16 17:31:01,352 [1] DEBUG TicketRepositoryImpl - RunJoinQuery → 2 tickets
+2026-03-16 17:31:01,352 [1] INFO  Program - Search results: 2
+2026-03-16 17:31:01,352 [1] INFO  Program -   Maria Popescu | Steaua vs Dinamo | 5 locuri
+2026-03-16 17:31:01,352 [1] INFO  Program -   Maria Popescu | Steaua vs Dinamo | 3 locuri
+2026-03-16 17:31:01,353 [1] DEBUG ServiceImpl - ModifyTicketSeats(ticketId=2, newSeats=5)
+2026-03-16 17:31:01,353 [1] DEBUG ServiceImpl - ModifyTicketSeats(ticketId=2, newSeats=5)
+2026-03-16 17:31:01,353 [1] DEBUG TicketRepositoryImpl - FindById(2)
+2026-03-16 17:31:01,353 [1] DEBUG TicketRepositoryImpl - FindById(2)
+2026-03-16 17:31:01,353 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:31:01,353 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:31:01,353 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=492/500}
+2026-03-16 17:31:01,353 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=492/500}
+2026-03-16 17:31:01,354 [1] DEBUG TicketRepositoryImpl - Update() in tickets: Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:31:01,354 [1] DEBUG TicketRepositoryImpl - Update() in tickets: Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:31:01,360 [1] INFO  TicketRepositoryImpl - Update() succeeded in tickets (rows=1): Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:31:01,360 [1] INFO  TicketRepositoryImpl - Update() succeeded in tickets (rows=1): Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:31:01,360 [1] DEBUG MatchRepositoryImpl - UpdateAvailableSeats(matchId=1, delta=-2)
+2026-03-16 17:31:01,360 [1] DEBUG MatchRepositoryImpl - UpdateAvailableSeats(matchId=1, delta=-2)
+2026-03-16 17:31:01,367 [1] INFO  MatchRepositoryImpl - AvailableSeats updated for matchId=1 by -2
+2026-03-16 17:31:01,367 [1] INFO  MatchRepositoryImpl - AvailableSeats updated for matchId=1 by -2
+2026-03-16 17:31:01,367 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:31:01,367 [1] DEBUG MatchRepositoryImpl - FindById(1) in matches
+2026-03-16 17:31:01,367 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=490/500}
+2026-03-16 17:31:01,367 [1] DEBUG MatchRepositoryImpl - FindById(1) → Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=490/500}
+2026-03-16 17:31:01,367 [1] INFO  CashierDashboardController - Match updated notification received: Match{Id=1, Name='Steaua vs Dinamo', Price=50, Seats=490/500}
+2026-03-16 17:31:01,367 [1] INFO  ServiceImpl - Ticket 2 modified: 3 → 5 seats
+2026-03-16 17:31:01,367 [1] INFO  ServiceImpl - Ticket 2 modified: 3 → 5 seats
+2026-03-16 17:31:01,367 [1] INFO  Program - Modified ticket: Ticket{Id=2, Customer='Maria Popescu', Match='Steaua vs Dinamo', Seats=5}
+2026-03-16 17:31:01,368 [1] INFO  CashierDashboardController - Cashier ionescu logged out
+2026-03-16 17:31:01,368 [1] INFO  Program - === Demo complete ===

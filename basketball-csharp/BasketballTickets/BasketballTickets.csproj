@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>BasketballTickets</RootNamespace>
+    <AssemblyName>BasketballTickets</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SQLite driver -->
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.0" />
+
+    <!-- Log4Net (echivalent Log4j2) -->
+    <PackageReference Include="log4net" Version="2.0.15" />
+  </ItemGroup>
+
+  <!-- Copy config files to output directory -->
+  <ItemGroup>
+    <None Update="configs\config.properties">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="configs\log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/bin/Debug/net8.0/cs
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/bin/Debug/net8.0/cs.deps.json
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/bin/Debug/net8.0/cs.runtimeconfig.json
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/bin/Debug/net8.0/cs.dll
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/bin/Debug/net8.0/cs.pdb
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/cs.GeneratedMSBuildEditorConfig.editorconfig
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/cs.AssemblyInfoInputs.cache
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/cs.AssemblyInfo.cs
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/cs.csproj.CoreCompileInputs.cache
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/cs.sourcelink.json
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/cs.dll
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/refint/cs.dll
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/cs.pdb
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/cs.genruntimeconfig.cache
+/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/Lab02/cs/obj/Debug/net8.0/ref/cs.dll

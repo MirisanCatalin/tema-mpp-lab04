@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "C4UEU2A8wx3S7xg1GnGjtd5TZXhn58hO1F96V43yUaPEw8HCCzp1OuAMqVKgQkWCruzlEtuLNBvKj6KGruBA6Q==",
+  "success": true,
+  "projectFilePath": "/home/catalin/Documents/UBB/an2/sem2/MPP/Lab/lab04/basketball-csharp/BasketballTickets/BasketballTickets.csproj",
+  "expectedPackageFiles": [
+    "/home/catalin/.nuget/packages/log4net/2.0.15/log4net.2.0.15.nupkg.sha512",
+    "/home/catalin/.nuget/packages/microsoft.data.sqlite/8.0.0/microsoft.data.sqlite.8.0.0.nupkg.sha512",
+    "/home/catalin/.nuget/packages/microsoft.data.sqlite.core/8.0.0/microsoft.data.sqlite.core.8.0.0.nupkg.sha512",
+    "/home/catalin/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "/home/catalin/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.6/sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
+    "/home/catalin/.nuget/packages/sqlitepclraw.core/2.1.6/sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "/home/catalin/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.6/sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
+    "/home/catalin/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "/home/catalin/.nuget/packages/system.configuration.configurationmanager/4.5.0/system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "/home/catalin/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/home/catalin/.nuget/packages/system.security.accesscontrol/4.5.0/system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "/home/catalin/.nuget/packages/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "/home/catalin/.nuget/packages/system.security.permissions/4.5.0/system.security.permissions.4.5.0.nupkg.sha512",
+    "/home/catalin/.nuget/packages/system.security.principal.windows/4.5.0/system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
